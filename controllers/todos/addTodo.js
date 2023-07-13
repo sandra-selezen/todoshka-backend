@@ -1,6 +1,6 @@
-const { Todo } = require('../models')
-const { HttpError } = require('../helpers')
-const { addTodoSchema } = require('../schemas')
+const { Todo } = require('../../models')
+const { HttpError } = require('../../helpers')
+const { addTodoSchema } = require('../../schemas')
 
 const addTodo = async (req, res) => {
   const { error } = addTodoSchema.validate(req.body)
