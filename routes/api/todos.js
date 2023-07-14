@@ -4,7 +4,7 @@ const { ctrlWrapper } = require('../../helpers')
 
 const router = express.Router()
 
-router.get('/')
+// router.get('/')
 
 router.post('/', ctrlWrapper(ctrl.addTodo))
 
