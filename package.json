@@ -1,5 +1,5 @@
 {
-  "name": "todoshka-backend",
+  "name": "todoshka-rest-api",
   "version": "1.0.0",
   "description": "REST API for todoshka app",
   "private": true,
