@@ -5,7 +5,7 @@ const dotenv = require('dotenv')
 
 dotenv.config()
 
-const { todosRouter } = require('./routes/api')
+const { todosRouter, authRouter } = require('./routes/api')
 
 const app = express()
 
@@ -15,7 +15,8 @@ app.use(logger(formatsLogger))
 app.use(cors())
 app.use(express.json())
 
-// app.use('/api/users', authRouter)
+app.use('/api/users', authRouter)
+
 app.use('/api/todos', todosRouter)
 
 app.use((req, res) => {

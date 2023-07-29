@@ -1,9 +1,9 @@
 const Joi = require('joi');
 
 const registerSchema = Joi.object({
-  name: Joi.string.require(),
-  email: Joi.string.require(),
-  password: Joi.string.require(),
+  name: Joi.string().required(),
+  email: Joi.string().required(),
+  password: Joi.string().required(),
 })
 
 module.exports = registerSchema
