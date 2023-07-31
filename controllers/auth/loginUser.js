@@ -28,11 +28,9 @@ const loginUser = async (req, res) => {
   await User.findByIdAndUpdate(user._id, { token })
 
   res.status(200).json({
-    user: {
-      name: user.name,
-      email: user.email,
-      token,
-    }
+    name: user.name,
+    email: user.email,
+    token,
   })
 }
 
